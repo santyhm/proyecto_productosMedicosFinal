@@ -1,0 +1,48 @@
+body{
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255, 255, 255, 0.267)), url(../recursos/imgBusqueda.jpg);
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+input{
+    font-family: 'Unna', serif;
+    width: 97%;
+    font-size: 30px;
+    border: none;
+    background: transparent;
+    border-bottom:1px solid #ccc;
+    outline: none;
+}
+form{
+    width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px #888;
+    
+}
+p{
+    margin: 16px 10px;
+}
+a{
+    align-content: center;
+    margin: 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.btnRegistro{
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    background: rgba(127, 178, 208, 0.87);
+    color: #000;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 6px;
+}

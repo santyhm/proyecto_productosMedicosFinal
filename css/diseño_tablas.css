@@ -1,0 +1,78 @@
+body{
+    background: #fff;
+}
+#main-center{
+    margin:150px auto;
+    width:600px;
+}
+table{
+    background-color: rgb(101, 186, 243);
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+td{
+    border: solid 1px black;
+    padding: 5;
+}
+thead{
+    background-color: #1334eb;
+    border-bottom: solid 5px black;
+    color: #fff;
+}
+tr:hover td{
+    background-color: #369681;
+    color:#fff
+}
+a{
+    align-content: center;
+    margin: 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Unna', serif;
+}
+input{
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    border-bottom:1px solid #ccc;
+    outline: none;
+    margin: 0 10px;
+}
+.aDos{
+    align-content: center;
+    margin: 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.fondo{
+    background-image:url(1036966535.jpg) ;
+    width: 5%;
+    height: 10vh;
+    background-size: cover ;
+    background-position: center ;
+}
+.contenedor{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+.texto{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin: 0 10px;
+}
+.btnEliminar{
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    background: rgba(235, 51, 51, 0.603);
+    color: #000;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+

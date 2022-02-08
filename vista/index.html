@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos Medicos</title>
+    <link rel="stylesheet" href="../css/diseño.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+        <ul>
+            <li><a href="busquedaPorFecha.php">Buscar productos por fecha de vencimiento</a></li>
+            <li><a href="registrosCompletos.php">Mostrar todos los productos registrados</a></li>
+            <li><a href="index1.html">Calendario</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <!-- <li><a href="#">Contacto</a></li> -->
+       </ul>
+       </div>
+       <div class="content">
+       </div>
+
+
+    <!-- <div class="flex">
+        <p>Revisar los productos por fecha</p>
+        <a href="busquedaPorFecha.php">Ingresar</a>
+        <a class="btnCalendario" href="index1.html">Calendario</a>
+    </div> -->
+    <br>
+    <h1>Productos Médicos</h1>
+    <br>
+    <form action="../modelo/registrar.php" method="POST">
+        <div class="textflotante">
+            <input class="" type="text" name="nomReferencia" placeholder="Nombre de Referencia" autocomplete="off" required>
+            <input class="" type="text" name="labProducido" placeholder="Laboratorio que lo produce" autocomplete="off" required>
+            <input class="" type="number" name="cantidad" placeholder="Cantidad recibida" autocomplete="off" required>
+            <input type="text" value="Fecha de vencimiento" readonly="readonly" class="fechaVencimiento">
+            <input class="" type="date" name="fechaVencimiento" placeholder="Fecha de vencimiento" autocomplete="off" required>
+        </div>
+        <button class="btnRegistro">Registrar</button>
+    </form>
+    <br>
+    <h2>Actualización de productos</h2>
+    <br>
+    <form action="../controlador/actualizar.php" method="POST">
+        <div>
+            <input class="" type="number" name="id" placeholder="Ingrese el id del producto" autocomplete="off" required>
+            <input class="" type="number" name="nuevCantidad" placeholder="Ingrese la nueva cantidad" autocomplete="off" required>
+            <input type="text" value="Nueva fecha de vencimiento" readonly="readonly" class="fechaVencimiento">
+            <input class="" type="date" name="nuevFechaVencimiento" placeholder="Ingrese la nueva fecha de vencimiento" autocomplete="off" required>
+        </div>
+        <button class="btnRegistro">Actualizar</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+</body>
+</html>
